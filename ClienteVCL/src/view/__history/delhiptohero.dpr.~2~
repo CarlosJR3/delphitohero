@@ -1,0 +1,15 @@
+program delhiptohero;
+
+uses
+  Vcl.Forms,
+  delhiptohero.view.main in 'delhiptohero.view.main.pas' {Form1},
+  delphitohero.view.styles.color in 'styles\delphitohero.view.styles.color.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,29 @@
+unit delhiptohero.view.main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls;
+
+type
+  TFormprincipal = class(TForm)
+    pnlMain: TPanel;
+    pnlmenu: TPanel;
+    pnlfull: TPanel;
+    pnltop: TPanel;
+    pnlprincipal: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Formprincipal: TFormprincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.

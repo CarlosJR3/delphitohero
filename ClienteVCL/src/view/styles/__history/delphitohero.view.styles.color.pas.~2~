@@ -1,0 +1,15 @@
+unit delphitohero.view.styles.color;
+
+interface
+
+const
+COLOR_BACKGROUND = $00ffffff;
+COLOR_BACKGROUND_TOP = $00a4584c;
+COLOR_BACKGROUND_TOP_SUBMENU = $00fcfaf9;
+COLOR_BACKGROUND_MENU = $00F8F2ed;
+
+
+
+implementation
+
+end.

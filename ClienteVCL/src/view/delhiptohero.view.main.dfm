@@ -22,8 +22,8 @@ object Formprincipal: TFormprincipal
     BevelOuter = bvNone
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 846
-    ExplicitHeight = 675
+    ExplicitWidth = 830
+    ExplicitHeight = 636
     object pnlmenu: TPanel
       Left = 0
       Top = 0
@@ -33,7 +33,7 @@ object Formprincipal: TFormprincipal
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 675
+      ExplicitHeight = 636
       object SpeedButton1: TSpeedButton
         Left = 0
         Top = 129
@@ -51,7 +51,7 @@ object Formprincipal: TFormprincipal
         Width = 185
         Height = 64
         Align = alTop
-        Caption = 'USUARIOS'
+        Caption = 'PRINCIPAL'
         Flat = True
         OnClick = SpeedButton2Click
       end
@@ -75,8 +75,8 @@ object Formprincipal: TFormprincipal
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 1
-      ExplicitWidth = 661
-      ExplicitHeight = 675
+      ExplicitWidth = 645
+      ExplicitHeight = 636
       object pnltop: TPanel
         Left = 0
         Top = 0
@@ -86,6 +86,7 @@ object Formprincipal: TFormprincipal
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 0
+        ExplicitWidth = 645
       end
       object pnlprincipal: TPanel
         Left = 0
@@ -96,9 +97,8 @@ object Formprincipal: TFormprincipal
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 1
-        ExplicitTop = 49
-        ExplicitWidth = 661
-        ExplicitHeight = 626
+        ExplicitWidth = 645
+        ExplicitHeight = 571
       end
     end
   end

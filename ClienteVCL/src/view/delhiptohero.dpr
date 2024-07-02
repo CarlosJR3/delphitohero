@@ -5,8 +5,8 @@ uses
   delhiptohero.view.main in 'delhiptohero.view.main.pas' {Formprincipal},
   delphitohero.view.styles.color in 'styles\delphitohero.view.styles.color.pas',
   Delphitohero.view.pages.principal in 'pages\Delphitohero.view.pages.principal.pas' {pagesprincipal},
-  Delphitohero.view.pages.usuarios in 'pages\Delphitohero.view.pages.usuarios.pas' {pagesusarios},
-  delphitohero.view.routers in 'Routers\delphitohero.view.routers.pas';
+  delphitohero.view.routers in 'Routers\delphitohero.view.routers.pas',
+  Delphitohero.view.pages.form.template in 'pages\Delphitohero.view.pages.form.template.pas' {FormTemplate};
 
 {$R *.res}
 
@@ -15,5 +15,6 @@ begin
   ReportMemoryLeaksOnShutdown := true;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFormprincipal, Formprincipal);
+  Application.CreateForm(TFormTemplate, FormTemplate);
   Application.Run;
 end.

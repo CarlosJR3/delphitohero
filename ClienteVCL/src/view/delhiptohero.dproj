@@ -115,6 +115,10 @@
             <Form>FormTemplate</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="pages\Delphitohero.view.pages.usuarios.pas">
+            <Form>PageUsuarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -3,18 +3,31 @@ unit Delphitohero.view.pages.form.template;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls;
+  Winapi.Windows,
+  Winapi.Messages,
+   System.SysUtils,
+    System.Variants,
+     System.Classes,
+     Vcl.Graphics,
+    Vcl.Controls,
+     Vcl.Forms,
+    Vcl.Dialogs,
+    Vcl.ExtCtrls,
+    Router4D.Interfaces;
 
 type
-  TFormTemplate = class(TForm)
+  TFormTemplate = class(TForm,iRouter4DComponent)
     Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
       procedure ApplyStyle;
   public
     { Public declarations }
+    function Render : TForm;
+    procedure UnRender;
   end;
 
 var
@@ -32,11 +45,23 @@ uses
 procedure TFormTemplate.ApplyStyle;
 begin
     panel1.Color := COLOR_BACKGROUND;
+    panel2.Color := COLOR_C1;
+    panel3.Color := COLOR_BACKGROUND;
 end;
 
 procedure TFormTemplate.FormCreate(Sender: TObject);
 begin
       ApplyStyle;
+end;
+
+function TFormTemplate.Render: TForm;
+begin
+    Result := Self;
+end;
+
+procedure TFormTemplate.UnRender;
+begin
+ //
 end;
 
 end.

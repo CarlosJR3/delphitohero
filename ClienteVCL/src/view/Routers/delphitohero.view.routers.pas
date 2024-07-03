@@ -17,8 +17,9 @@ implementation
 
 uses
 Router4D,
-Delphitohero.view.pages.principal;
-// Delphitohero.view.pages.usuarios
+Delphitohero.view.pages.principal,
+ Delphitohero.view.pages.usuarios;
+
 
 { TRouters }
 
@@ -27,7 +28,7 @@ begin
    TRouter4D
     .Switch
     .Router('principal', Tpagesprincipal)
-   // .Router('usuarios',  Tpagesusarios ) ;
+    .Router('usuarios',  TPageUsuarios ) ;
 end;
 
 destructor TRouters.Destroy;

@@ -22,9 +22,29 @@ object FormTemplate: TFormTemplate
     Align = alClient
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 328
-    ExplicitTop = 320
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    object Panel2: TPanel
+      Left = 1
+      Top = 1
+      Width = 841
+      Height = 64
+      Align = alTop
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 0
+    end
+    object Panel3: TPanel
+      Left = 1
+      Top = 65
+      Width = 841
+      Height = 609
+      Align = alClient
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 1
+      ExplicitLeft = 328
+      ExplicitTop = 320
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+    end
   end
 end

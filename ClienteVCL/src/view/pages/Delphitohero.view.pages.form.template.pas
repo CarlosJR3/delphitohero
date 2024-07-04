@@ -13,13 +13,15 @@ uses
      Vcl.Forms,
     Vcl.Dialogs,
     Vcl.ExtCtrls,
-    Router4D.Interfaces;
+    Router4D.Interfaces, Vcl.StdCtrls;
 
 type
   TFormTemplate = class(TForm,iRouter4DComponent)
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
+    Panel4: TPanel;
+    Label1: TLabel;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -47,6 +49,8 @@ begin
     panel1.Color := COLOR_BACKGROUND;
     panel2.Color := COLOR_C1;
     panel3.Color := COLOR_BACKGROUND;
+    panel4.Color := COLOR_C1;
+
 end;
 
 procedure TFormTemplate.FormCreate(Sender: TObject);

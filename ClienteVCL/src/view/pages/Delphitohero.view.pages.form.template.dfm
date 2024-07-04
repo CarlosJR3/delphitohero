@@ -29,8 +29,33 @@ object FormTemplate: TFormTemplate
       Height = 64
       Align = alTop
       BevelOuter = bvNone
+      Padding.Left = 100
+      Padding.Right = 100
       ParentBackground = False
       TabOrder = 0
+      object Panel4: TPanel
+        Left = 100
+        Top = 0
+        Width = 641
+        Height = 64
+        Align = alClient
+        BevelOuter = bvNone
+        ParentBackground = False
+        TabOrder = 0
+        ExplicitLeft = 328
+        ExplicitTop = 16
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object Label1: TLabel
+          Left = 0
+          Top = 0
+          Width = 57
+          Height = 64
+          Align = alLeft
+          Caption = 'Label1'
+          Layout = tlCenter
+        end
+      end
     end
     object Panel3: TPanel
       Left = 1
@@ -41,10 +66,6 @@ object FormTemplate: TFormTemplate
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 328
-      ExplicitTop = 320
-      ExplicitWidth = 185
-      ExplicitHeight = 41
     end
   end
 end

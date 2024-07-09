@@ -42,18 +42,37 @@ object FormTemplate: TFormTemplate
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 328
-        ExplicitTop = 16
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object Label1: TLabel
           Left = 0
           Top = 0
-          Width = 57
+          Width = 36
           Height = 64
           Align = alLeft
           Caption = 'Label1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
           Layout = tlCenter
+          ExplicitHeight = 15
+        end
+        object SpeedButton1: TSpeedButton
+          Left = 501
+          Top = 0
+          Width = 140
+          Height = 64
+          Align = alRight
+          Caption = 'RELAT'#211'RIOS'
+          Flat = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitLeft = 608
         end
       end
     end
@@ -67,5 +86,9 @@ object FormTemplate: TFormTemplate
       ParentBackground = False
       TabOrder = 1
     end
+  end
+  object ImageList1: TImageList
+    Left = 648
+    Top = 296
   end
 end

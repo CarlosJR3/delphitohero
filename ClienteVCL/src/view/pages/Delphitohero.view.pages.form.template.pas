@@ -13,7 +13,8 @@ uses
      Vcl.Forms,
     Vcl.Dialogs,
     Vcl.ExtCtrls,
-    Router4D.Interfaces, Vcl.StdCtrls;
+    Router4D.Interfaces, Vcl.StdCtrls, Vcl.Buttons, System.ImageList,
+  Vcl.ImgList;
 
 type
   TFormTemplate = class(TForm,iRouter4DComponent)
@@ -22,6 +23,8 @@ type
     Panel3: TPanel;
     Panel4: TPanel;
     Label1: TLabel;
+    SpeedButton1: TSpeedButton;
+    ImageList1: TImageList;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -50,6 +53,10 @@ begin
     panel2.Color := COLOR_C1;
     panel3.Color := COLOR_BACKGROUND;
     panel4.Color := COLOR_C1;
+
+      Label1.Font.Size := FONT_H5;
+      label1 .Font.Color := FONT_COLOR3;
+      Label1 .Font.Name := 'segoe UI';
 
 end;
 

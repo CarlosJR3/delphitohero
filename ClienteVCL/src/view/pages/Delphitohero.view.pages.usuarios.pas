@@ -13,7 +13,7 @@ uses
      Vcl.Forms,
     Vcl.Dialogs,
     Delphitohero.view.pages.form.template,
-   Vcl.ExtCtrls, Vcl.StdCtrls;
+   Vcl.ExtCtrls, Vcl.StdCtrls, System.ImageList, Vcl.ImgList, Vcl.Buttons;
 
 type
   TPageUsuarios = class(TFormTemplate)

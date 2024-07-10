@@ -25,6 +25,8 @@ type
     Label1: TLabel;
     SpeedButton1: TSpeedButton;
     ImageList1: TImageList;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

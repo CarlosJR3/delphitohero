@@ -14,7 +14,8 @@ uses
     Vcl.Dialogs,
     Vcl.ExtCtrls,
     Router4D.Interfaces, Vcl.StdCtrls, Vcl.Buttons, System.ImageList,
-  Vcl.ImgList;
+  Vcl.ImgList,
+     Bind4D;
 
 type
   TFormTemplate = class(TForm,iRouter4DComponent)

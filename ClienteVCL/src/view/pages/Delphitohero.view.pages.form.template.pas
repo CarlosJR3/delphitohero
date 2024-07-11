@@ -31,6 +31,9 @@ type
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+    FEndPoint : string;
+    FPK : string;
+    FTitle : string;
       procedure ApplyStyle;
   public
     { Public declarations }
@@ -66,6 +69,9 @@ end;
 procedure TFormTemplate.FormCreate(Sender: TObject);
 begin
       ApplyStyle;
+     TBindFormJson.new;
+
+
 end;
 
 function TFormTemplate.Render: TForm;

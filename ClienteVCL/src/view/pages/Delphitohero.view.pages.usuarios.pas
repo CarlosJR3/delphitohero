@@ -20,6 +20,7 @@ uses
       Vcl.Buttons;
 
 type
+ [classToBind('','','Cadastro de Usuários')]
   TPageUsuarios = class(TFormTemplate)
   private
     { Private declarations }

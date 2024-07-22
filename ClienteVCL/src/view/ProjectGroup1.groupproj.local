@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions/>
-  <Default.Personality>
-    <Projects ActiveProject="C:\Users\Carlos jr\Documents\Embarcadero\delphitohero\ClienteVCL\src\view\delhiptohero.dproj"/>
-  </Default.Personality>
+	<Transactions/>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\Carlos jr\Documents\Embarcadero\delphitohero\ClienteVCL\src\view\delhiptohero.dproj"/>
+	</Default.Personality>
 </BorlandProject>

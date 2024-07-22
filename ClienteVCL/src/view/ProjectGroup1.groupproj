@@ -6,9 +6,6 @@
         <Projects Include="delhiptohero.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="modules\bind4d\Sample\Project1.dproj">
-            <Dependencies/>
-        </Projects>
         <Projects Include="modules\bind4d\Bind4Delphi.dproj">
             <Dependencies/>
         </Projects>
@@ -29,15 +26,6 @@
     <Target Name="delhiptohero:Make">
         <MSBuild Projects="delhiptohero.dproj" Targets="Make"/>
     </Target>
-    <Target Name="Project1">
-        <MSBuild Projects="modules\bind4d\Sample\Project1.dproj"/>
-    </Target>
-    <Target Name="Project1:Clean">
-        <MSBuild Projects="modules\bind4d\Sample\Project1.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Project1:Make">
-        <MSBuild Projects="modules\bind4d\Sample\Project1.dproj" Targets="Make"/>
-    </Target>
     <Target Name="Bind4Delphi">
         <MSBuild Projects="modules\bind4d\Bind4Delphi.dproj"/>
     </Target>
@@ -48,13 +36,13 @@
         <MSBuild Projects="modules\bind4d\Bind4Delphi.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="delhiptohero;Project1;Bind4Delphi"/>
+        <CallTarget Targets="delhiptohero;Bind4Delphi"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="delhiptohero:Clean;Project1:Clean;Bind4Delphi:Clean"/>
+        <CallTarget Targets="delhiptohero:Clean;Bind4Delphi:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="delhiptohero:Make;Project1:Make;Bind4Delphi:Make"/>
+        <CallTarget Targets="delhiptohero:Make;Bind4Delphi:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

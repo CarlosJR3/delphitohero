@@ -17,11 +17,15 @@ uses
     Vcl.StdCtrls,
      System.ImageList,
       Vcl.ImgList,
-      Vcl.Buttons;
+      Vcl.Buttons, Data.DB, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.StorageBin, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, Vcl.Grids, Vcl.DBGrids;
 
 type
- [classToBind('','','Cadastro de Usuários')]
+ [classToBind('/users','id','Cadastro de Usuários')]
   TPageUsuarios = class(TFormTemplate)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,5 +38,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TPageUsuarios.FormCreate(Sender: TObject);
+begin
+  inherited;
+  LABEL1.Caption :='Cadastro de Usuários'
+end;
 
 end.

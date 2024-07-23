@@ -138,8 +138,6 @@ object FormTemplate: TFormTemplate
         Padding.Right = 100
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = -1
-        ExplicitTop = 6
         object Panel6: TPanel
           Left = 100
           Top = 0
@@ -158,7 +156,6 @@ object FormTemplate: TFormTemplate
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 0
-            ExplicitTop = 215
           end
           object Panel8: TPanel
             Left = 0
@@ -169,7 +166,6 @@ object FormTemplate: TFormTemplate
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 1
-            ExplicitHeight = 216
             object SpeedButton4: TSpeedButton
               Left = 128
               Top = 0
@@ -225,7 +221,6 @@ object FormTemplate: TFormTemplate
                 Height = 15
                 Align = alTop
                 Caption = 'Pesquisar'
-                ExplicitTop = 0
                 ExplicitWidth = 50
               end
               object Edit1: TEdit
@@ -236,7 +231,6 @@ object FormTemplate: TFormTemplate
                 Align = alTop
                 BorderStyle = bsNone
                 TabOrder = 0
-                ExplicitTop = 15
               end
               object Panel10: TPanel
                 Left = 0
@@ -261,10 +255,6 @@ object FormTemplate: TFormTemplate
           Padding.Bottom = 35
           ParentBackground = False
           TabOrder = 1
-          ExplicitLeft = 328
-          ExplicitTop = 288
-          ExplicitWidth = 185
-          ExplicitHeight = 41
           object Panel12: TPanel
             Left = 389
             Top = 0
@@ -274,8 +264,6 @@ object FormTemplate: TFormTemplate
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 0
-            ExplicitLeft = 413
-            ExplicitTop = 24
           end
           object DBGrid1: TDBGrid
             Left = 0

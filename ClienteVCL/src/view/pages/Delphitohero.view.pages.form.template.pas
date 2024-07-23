@@ -3,22 +3,34 @@ unit Delphitohero.view.pages.form.template;
 interface
 
 uses
-  Winapi.Windows,
-  Winapi.Messages,
-   System.SysUtils,
-    System.Variants,
-     System.Classes,
-     Vcl.Graphics,
-    Vcl.Controls,
-     Vcl.Forms,
-    Vcl.Dialogs,
-    Vcl.ExtCtrls,
-    Router4D.Interfaces, Vcl.StdCtrls, Vcl.Buttons, System.ImageList,
-  Vcl.ImgList,
-     Bind4D, Data.DB, FireDAC.Stan.Intf, FireDAC.Stan.Option,
-  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
-  FireDAC.DApt.Intf, FireDAC.Stan.StorageBin, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client, Vcl.Grids, Vcl.DBGrids;
+      Winapi.Windows,
+      Winapi.Messages,
+      System.SysUtils,
+      System.Variants,
+      System.Classes,
+      Vcl.Graphics,
+      Vcl.Controls,
+      Vcl.Forms,
+      Vcl.Dialogs,
+      Vcl.ExtCtrls,
+      Router4D.Interfaces,
+      Vcl.StdCtrls,
+      Vcl.Buttons,
+      System.ImageList,
+      Vcl.ImgList,
+      Data.DB,
+      FireDAC.Stan.Intf,
+      FireDAC.Stan.Option,
+      FireDAC.Stan.Param,
+      FireDAC.Stan.Error,
+      FireDAC.DatS,
+      FireDAC.Phys.Intf,
+      FireDAC.DApt.Intf,
+      FireDAC.Stan.StorageBin,
+      FireDAC.Comp.DataSet,
+      FireDAC.Comp.Client,
+      Vcl.Grids, Vcl.DBGrids,
+      Bind4D;
 
 type
   TFormTemplate = class(TForm,iRouter4DComponent)
@@ -52,6 +64,7 @@ type
     FEndPoint : string;
     FPK : string;
     FTitle : string;
+    FSort, FOrder : string;
       procedure ApplyStyle;
   public
     { Public declarations }
@@ -121,9 +134,13 @@ end;
 
 procedure TFormTemplate.FormCreate(Sender: TObject);
 begin
-
-     // TBindFormJson.new.BindclassToForm(Self,FEndPoint,FPK,FTitle);
-          ApplyStyle;
+     TBind4d
+       .new
+       .Form(Self)
+       .BindFormDefault(FTitle)
+       .BindFormRest (FEndPoint, FPK, FSort, FOrder)
+       .SetStyleComponents;
+        ApplyStyle;
 
 end;
 

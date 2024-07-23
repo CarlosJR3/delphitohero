@@ -1,0 +1,20 @@
+inherited PageUsuarios: TPageUsuarios
+  Caption = 'PageUsuarios'
+  TextHeight = 15
+  inherited Panel1: TPanel
+    inherited Panel3: TPanel
+      inherited Panel5: TPanel
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        inherited Panel6: TPanel
+          inherited Panel7: TPanel
+            ExplicitTop = 160
+          end
+          inherited Panel8: TPanel
+            ExplicitHeight = 160
+          end
+        end
+      end
+    end
+  end
+end
